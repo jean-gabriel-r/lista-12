@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    char nome[100];
+    float nota, frequencia;
+
+    printf("Digite o nome do estudante: ");
+    fgets(nome, sizeof(nome), stdin);
+
+    printf("Digite a nota do estudante: ");
+    scanf("%f", &nota);
+
+    printf("Digite a frequencia (em %%): ");
+    scanf("%f", &frequencia);
+
+    if (nota >= 7.0 && frequencia >= 75.0) {
+        printf("Estudante aprovado!\n");
+    } else {
+        printf("Estudante reprovado.\n");
+    }
+
+    return 0;
+}
